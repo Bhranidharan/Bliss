@@ -298,28 +298,31 @@ class _ProfileState extends State<Profile> {
                       color: Colors.grey,
                       indent: 25,
                     ),
-                    Row(
-                      children: [
-                        Container(
-                          margin: EdgeInsets.only(top: 20, left: 20),
-                          child: Icon(
-                            Icons.mail_rounded,
-                            color: Colors.white,
-                            size: 35,
-                          ),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(top: 20, left: 20),
-                          child: Text(
-                            "${myEmail!}",
-                            style: TextStyle(
-                              color: Colors.pink[300],
-                              fontSize: 25,
-                              fontWeight: FontWeight.w500,
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 20, left: 20),
+                            child: Icon(
+                              Icons.mail_rounded,
+                              color: Colors.white,
+                              size: 35,
                             ),
                           ),
-                        ),
-                      ],
+                          Container(
+                            margin: EdgeInsets.only(top: 20, left: 20),
+                            child: Text(
+                              "${myEmail!}",
+                              style: TextStyle(
+                                color: Colors.pink[300],
+                                fontSize: 25,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),

@@ -4,6 +4,8 @@ import 'package:messager_clone/helperfunctions/sharedpref_helper.dart';
 import 'package:messager_clone/services/auth.dart';
 import 'package:messager_clone/services/database.dart';
 import 'package:messager_clone/views/chatscreen.dart';
+import 'package:messager_clone/views/home.dart';
+import 'package:messager_clone/views/profile.dart';
 import 'package:messager_clone/views/signin.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -167,7 +169,7 @@ class _Home_doctorState extends State<Home_doctor> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home_Doctor"),
+        title: Text("Chats"),
         actions: [
           InkWell(
             onTap: () {
@@ -249,27 +251,6 @@ class _Home_doctorState extends State<Home_doctor> {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        currentIndex: 1,
-        fixedColor: Colors.lightBlue,
-        items: [
-          BottomNavigationBarItem(
-            title: Text('Home'),
-            icon: Icon(Icons.home),
-          ),
-          BottomNavigationBarItem(
-            title: Text('Search'),
-            icon: Icon(Icons.search),
-          ),
-          BottomNavigationBarItem(
-            title: Text('Connections'),
-            icon: Icon(Icons.people_alt),
-          )
-        ],
-        onTap: (int index) {
-          print(index.toString());
-        },
       ),
     );
   }

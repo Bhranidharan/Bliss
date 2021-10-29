@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:messager_clone/helperfunctions/sharedpref_helper.dart';
 import 'package:messager_clone/services/database.dart';
+import 'package:messager_clone/views/video_chat/video_main.dart';
 import 'package:random_string/random_string.dart';
 
 class ChatScreen extends StatefulWidget {
@@ -151,7 +152,10 @@ class _ChatScreenState extends State<ChatScreen> {
                   Icons.video_call,
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Video_Call()));
+                },
               ),
             ),
           ),

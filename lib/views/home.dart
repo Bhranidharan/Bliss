@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:messager_clone/helperfunctions/sharedpref_helper.dart';
 import 'package:messager_clone/services/auth.dart';
 import 'package:messager_clone/services/database.dart';
+import 'package:messager_clone/sleep/sleep_home.dart';
+import 'package:messager_clone/views/breathing_exe.dart';
 import 'package:messager_clone/views/chatscreen.dart';
-import 'package:messager_clone/views/doc_info.dart';
-import 'package:messager_clone/views/doc_info.dart';
+
+import 'package:messager_clone/views/home_doctor.dart';
 import 'package:messager_clone/views/profile.dart';
 import 'package:messager_clone/views/signin.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -173,7 +175,7 @@ class _HomeState extends State<Home> {
       backgroundColor: Colors.pink,
       appBar: AppBar(
         elevation: 0,
-        title: Text("Home_patient"),
+        title: Text("bliss"),
         actions: [
           InkWell(
             onTap: () {
@@ -264,7 +266,12 @@ class _HomeState extends State<Home> {
                                     image:
                                         AssetImage("assets/SleepBanner.png"))),
                             child: MaterialButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Sleep_Home()));
+                              },
                             ),
                           ),
                         ),
@@ -281,7 +288,12 @@ class _HomeState extends State<Home> {
                                   image: AssetImage(
                                       "assets/Breathing Exercises banner.png"))),
                           child: MaterialButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => Breathing_Exe()));
+                            },
                           ),
                         )),
                       ),
@@ -422,6 +434,11 @@ class _HomeState extends State<Home> {
             ListTile(
               title: Text('Chats'),
               leading: Icon(Icons.chat),
+              onTap: () {
+                AuthMethod().signOut();
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => Home_doctor()));
+              },
             ),
             Divider(
               height: 0.5,

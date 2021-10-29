@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:messager_clone/views/Doc_navi.dart';
 import 'package:messager_clone/views/home.dart';
 import 'package:messager_clone/views/home_doctor.dart';
 import 'package:messager_clone/views/signin.dart';
@@ -45,7 +46,7 @@ class _FrontScreenState extends State<FrontScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Home_doctor()));
+                                  builder: (context) => MyApp_doc()));
                         },
                         color: Colors.pinkAccent,
                         shape: RoundedRectangleBorder(
