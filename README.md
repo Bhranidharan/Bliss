@@ -6,6 +6,7 @@
 <li>Authentication - FireBase Auth</li>
 <li>Database - FireBase FireStore</li>
 <li>Video Calls - Agora RTC Engine</li>
+ <li>State Management - Flutter SetState</li>
 
 </ul>
 <h2>Features:</h2>
