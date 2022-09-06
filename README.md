@@ -1,13 +1,12 @@
-Bliss - an app to connect with  mental health specialists by Navanit Krish and Baranidharan
+<h1>Bliss - an app to connect with  mental health specialists by Navanit Krish and Baranidharan</h1>
 
 <h2>Features:</h2>
 - chat
 - video call 
 - blogs
 
-Signin
-
-![image](https://user-images.githubusercontent.com/81289674/139528699-72fa6a18-e699-4ee1-af40-dfb7ac24172e.png)
+<h3>Authorization</h3>
+<img src = "https://user-images.githubusercontent.com/81289674/139528699-72fa6a18-e699-4ee1-af40-dfb7ac24172e.png"/>
 -----------------------------------------
 
 Home page
