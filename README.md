@@ -27,7 +27,7 @@ Chat
 ![image](https://user-images.githubusercontent.com/81289674/139528794-59bd2a61-58d5-47a4-b5a3-cf8b09d84c9f.png)
 ------------------------------------------
 
-Video call 
+Video call with specialist
 
 ![image](https://user-images.githubusercontent.com/81289674/139528813-1683ce71-337a-4114-b7fe-a350b385c722.png)
 ![image](https://user-images.githubusercontent.com/81289674/139528819-a73ebf73-8186-4fbc-9e59-9a384edae543.png)
