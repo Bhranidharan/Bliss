@@ -1,5 +1,13 @@
-<h1>Bliss - an app to connect with  mental health specialists by Navanit Krish and Baranidharan</h1>
+<h1>Bliss - an app to connect with  mental health specialists by Navanit Krish and Baranidharan</h1><br>
+<h2>Tech Specs:</h2>
+<ul>
 
+<li>Frontend - FLutter/Dart</li>
+<li>Authentication - FireBase Auth</li>
+<li>Database - FireBase FireStore</li>
+<li>Video Calls - Agora RTC Engine</li>
+
+</ul>
 <h2>Features:</h2>
 <ul>
 
