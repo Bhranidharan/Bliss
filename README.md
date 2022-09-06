@@ -1,6 +1,6 @@
 Bliss - an app to connect with  mental health specialists by Navanit Krish and Baranidharan
 
-Features:
+<h2>Features:</h2>
 - chat
 - video call 
 - blogs
